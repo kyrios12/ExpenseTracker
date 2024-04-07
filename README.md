@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Expense_Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Expense tracker allows user to create new expenses, edit or delete previous expenses, Authentication for old users or just walk through app without authentication.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse the expenses on views page.
+- Search using expense name.
+- Filter by date through the list to fetch particular expense by date.
+- Add new expenses to track.
+- Edit any previous expenses.
+- Deleted any old expenses.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: [GIT Repo]([https://github.com/kyrios12/ExpenseTracker])
+2. Navigate to the project directory and extract the files.
+3. Run `npm install` to install the required packages.
+4. Navigate to [http://localhost:3000/](http://localhost:3000/) in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## High-Level Design
 
-### `npm test`
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/36d69618-90f1-430c-958c-ff30a465293d)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Product Module
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Product Component**: Allows browsing the product catalog, searching, and filtering products.
+- **Product Card Component**: Displays product details and allows adding products to the cart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Cart Module
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Cart Component**: Displays the items in the cart and cart summary.
+- **Cart Item Component**: Allows increasing/decreasing quantity and deleting items from the cart.
+- **Cart Summary Component**: Shows the total number of items and total amount in the cart.
 
-### `npm run eject`
+### Shared Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Header Component**: Displays company logo and navigation links.
+- **Filter Component**: Allows applying filter values for attributes like color, gender, price range, and type.
+- **Search Component**: Enables searching for products using free text.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Product Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Product Page](screenshots/product-page.png)
 
-## Learn More
+### Cart Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Cart Page](screenshots/cart-page.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Product Page Mobile
 
-### Code Splitting
+![Product Page Mobile](screenshots/product-page-mobile.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Cart Page Mobile
 
-### Analyzing the Bundle Size
+![Cart Page Mobile](screenshots/cart-page-mobile.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Exception Handling
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Exceptions are handled for scenarios like:
+- When no cart items are present.
+- When the searched/filtered product is not available.
+- When product fetching API fails.
