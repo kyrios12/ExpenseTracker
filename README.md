@@ -27,22 +27,7 @@ Expense tracker allows user to create new expenses, edit or delete previous expe
 ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/77322ce4-6dd8-4883-9a63-68d2873960f3)
 
 ## Low-Level Design
-App
-├── Components
-│   ├── Filter
-│   ├── Navbar
-|   └── Search 
-├── Custom Hooks
-│   ├── dateFormater
-│   └── emailName
-├── Pages
-│   ├── AddExpense
-│   ├── EditExpense
-│   ├── Home
-|   └── Login
-└── Reducer
-    └── homeReducer
-    
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/e5fe919a-4bed-455e-b7dd-d8d89e215420)
 ### Login Page
 ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/abe6b0da-cfed-4ca9-a698-be9cffae2015)
 ### Home Page
