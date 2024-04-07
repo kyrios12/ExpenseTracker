@@ -58,13 +58,14 @@ App
 - **Filter Component**: ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/6c3a2bf5-19c2-4f66-8bbb-e304d4067d07)
 
 - **Search Component**: ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/485cc4ff-5242-4253-b70c-fdee21b62584)
-- 
 ## Routes
-
+- **Landing Route**: http://localhost:3000/
+- **Home Route**: http://localhost:3000/home
+- **AddExpense Route**: http://localhost:3000/add-expense
+- **EditExpense Route**:http://localhost:3000/edit-expense/:id
 
 ## Exception Handling
 
 Exceptions are handled for scenarios like:
-- When no cart items are present.
-- When the searched/filtered product is not available.
-- When product fetching API fails.
+- When no expense it present.
+- When the searched/filtered expense is not available.
