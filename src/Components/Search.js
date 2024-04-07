@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import debounce from 'lodash/debounce'; // Import debounce function from lodash
+import debounce from 'lodash/debounce';
 import "../Styles/search.css";
 
 const Search = (props) => {
@@ -12,6 +12,8 @@ const Search = (props) => {
         dispatch({ type: 'SEARCH_EXPENSES', payload: searchQuery.toLowerCase() });
     }, 300);
 
+
+    // Search handler using debounce
     const handleSearch = (e) => {
         const searchQuery = e.target.value;
         setName(searchQuery);
@@ -22,7 +24,8 @@ const Search = (props) => {
     const handleToggle = () => {
         setToggle(!toggle);
     }
-
+     
+    // Clear handler
     const clearSearch = () => {
         setName(''); // Clear the search input
         dispatch({ type: 'CLEAR_SEARCH', payload: state.expenses });

@@ -19,13 +19,12 @@ const EditExpense = (props) => {
     const inputAmount = e.target.value;
   
     // Check if the input is empty or a valid positive number
+    // Used a regular expression to match the pattern
     if (inputAmount === '' || /^\d*\.?\d+$/.test(inputAmount)) {
       setAmount(inputAmount);
     }
   };
-  
-  
-
+  // Data handler
   const handleSubmit = (event) => {
     event.preventDefault();
     const updatedExpense = { id: editExpense.id, name, description, category, dateOfExpense: editExpense.dateOfExpense, updatedAt: formattedDateStr === editExpense.dateOfExpense ? 'now' : formattedDateStr, amount: Number(amount) };
@@ -38,7 +37,7 @@ const EditExpense = (props) => {
     setAmount('');
     navigate('/home');
   };
-
+  // Data reset handler
   const handleReset = () => {
     setName('');
     setDescription('');

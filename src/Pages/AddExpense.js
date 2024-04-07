@@ -14,6 +14,7 @@ const AddExpense = (props) => {
   const navigate = useNavigate();
   const formattedDateStr = useDateFormat(date);
 
+  // Form data handler
   const handleSubmit = (event) => {
     event.preventDefault();
     let newArr = state.expenses;
@@ -29,7 +30,8 @@ const AddExpense = (props) => {
     setAmount('');
     navigate('/home');
   };
-
+ 
+  // Data reset handler
   const handleReset = () => {
     setName('');
     setDescription('');

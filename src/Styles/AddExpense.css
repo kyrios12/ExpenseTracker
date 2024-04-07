@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   margin: -100px;
-  height: 100vh; /* Adjusted height */
+  height: 100vh; 
 }
 
 form {
@@ -14,38 +14,37 @@ form {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  width: 300px; /* Set a fixed width for better alignment */
+  width: 300px; 
 }
 
 form label {
-  margin-left: -200px; /* Adjusted label position */
+  margin-left: -200px; 
 }
 
 .expenseContainer input {
-  margin: 10px 0; /* Adjusted margin */
-  padding: 10px; /* Adjusted padding */
-  width: 100%; /* Make inputs full width */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  margin: 10px 0; 
+  padding: 10px; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .button {
-  margin: 10px 0; /* Adjusted margin */
-  padding: 10px 20px; /* Adjusted padding */
-  width: 50%; /* Make buttons full width */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  margin: 10px 0; 
+  padding: 10px 20px; 
+  width: 50%; 
+  box-sizing: border-box; 
 }
 
-/* Styling for specific button types */
 button[type=back] {
   margin: 10px;
 }
 
 button[type=submit] {
-  width: 50%; /* Make submit button full width */
+  width: 50%; 
 }
 
 button[type=cancel] {
-  background-color: #D03512; /* Custom background color for cancel button */
-  color: white; /* Text color for cancel button */
-  width: 50%; /* Make cancel button full width */
+  background-color: #D03512; 
+  color: white; 
+  width: 50%; 
 }

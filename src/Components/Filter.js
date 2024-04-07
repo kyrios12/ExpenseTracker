@@ -7,7 +7,8 @@ const Filter = (props) => {
   const { state, dispatch } = props;
   const [date, setDate] = useState('');
   const formattedDateStr = useDateFormat(date);
-
+  
+  // Filter handler
   const handleFilter = () => {
     let newArr = state.expenses.filter((expense) => {
       return expense.dateOfExpense === formattedDateStr;
@@ -15,6 +16,7 @@ const Filter = (props) => {
     dispatch({ type: 'FILTER_EXPENSES', payload: newArr })
   }
 
+  // Clear function
   const clearFilter = () => {
     setDate('');
     dispatch({ type: 'CLEAR_FILTER' })

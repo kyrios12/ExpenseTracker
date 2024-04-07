@@ -15,7 +15,7 @@ const Login = () => {
     const handleSkip = () => {
         navigate(`/home/`)
     }
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         // Form validation logic

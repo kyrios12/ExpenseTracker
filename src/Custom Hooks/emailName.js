@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const useEmailConverter = (initialEmail) => {
   const [username, setUsername] = useState(initialEmail.split('@')[0]);

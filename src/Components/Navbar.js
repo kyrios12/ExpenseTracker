@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar as BootstrapNavbar, Nav, Button, NavDropdown } from 'react-bootstrap';
+import { Navbar as BootstrapNavbar, Nav, Button} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import "../Styles/Navbar.css";
 import Filter from './Filter';
@@ -9,10 +9,11 @@ const Navbar = (props) => {
     const { state, dispatch } = props;
     const navigate = useNavigate();
     const [expanded, setExpanded] = useState(false);
-
+    
+    
     const handleAdd = () => {
         navigate('/add-expense');
-        setExpanded(false); // Collapse the navbar on mobile after clicking 'Add Expense'
+        setExpanded(false); 
     }
 
     return (

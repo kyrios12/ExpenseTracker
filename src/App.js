@@ -7,7 +7,7 @@ import AddExpense from './Pages/AddExpense';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import EditExpense from './Pages/EditExpense';
-import { useParams } from 'react-router-dom'; // Import useParams
+import { useParams } from 'react-router-dom'; 
 
 function App() {
   const initialState = {
@@ -17,6 +17,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
  
   return (
+    // Routes and Navigation
       <div className="App">
         <Navbar state={state} dispatch={dispatch} />
         <Routes>
@@ -29,10 +30,9 @@ function App() {
   );
 }
 
-// Create a wrapper component for EditExpense that extracts the name parameter from the URL
-
+// Wrapper Component for edit expense
 const EditExpenseWrapper = ({ state, dispatch }) => {
-  const { id } = useParams(); // Get the name parameter from the URL
+  const { id } = useParams(); 
   console.log(typeof id)
   return <EditExpense state={state} dispatch={dispatch} id={Number(id)} />;
 };

@@ -12,7 +12,7 @@ const Home = (props) => {
   const handleEdit = (id) => {
     navigate(`/edit-expense/${id}`);
   };
-
+  // Delete Handler
   const handleDelete = (id) => {
     // Show confirmation alert
     const deleteExpense = state.expenses.find(expense => expense.id === id)
