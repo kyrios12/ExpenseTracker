@@ -21,42 +21,46 @@ Expense tracker allows user to create new expenses, edit or delete previous expe
 ## High-Level Design
 
 ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/36d69618-90f1-430c-958c-ff30a465293d)
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/e1e33a5b-d3f2-4826-90db-f7a8162e4926)
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/f2804a38-30d8-4199-8e9d-006613ec58fe)
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/77322ce4-6dd8-4883-9a63-68d2873960f3)
 
+## Low-Level Design
+App
+├── Components
+│   ├── Filter
+│   ├── Navbar
+|   └── Search 
+├── Custom Hooks
+│   ├── dateFormater
+│   └── emailName
+├── Pages
+│   ├── AddExpense
+│   ├── EditExpense
+│   ├── Home
+|   └── Login
+└── Reducer
+    └── homeReducer
+    
+### Login Page
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/abe6b0da-cfed-4ca9-a698-be9cffae2015)
+### Home Page
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/1fe9a7ec-2bcf-4190-9796-218ad006cf3c)
+### AddExpense Page
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/fa211143-9d77-407a-9882-f2f0217b6826)
+### EditExpense Page
+![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/c82c3330-4e15-42f1-9009-c75ff15e150b)
 
-### Product Module
+### Components
 
-- **Product Component**: Allows browsing the product catalog, searching, and filtering products.
-- **Product Card Component**: Displays product details and allows adding products to the cart.
+- **Navbar Component**: ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/7b38e273-0ffd-43f6-9f41-479b57683b6f)
 
-### Cart Module
+- **Filter Component**: ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/6c3a2bf5-19c2-4f66-8bbb-e304d4067d07)
 
-- **Cart Component**: Displays the items in the cart and cart summary.
-- **Cart Item Component**: Allows increasing/decreasing quantity and deleting items from the cart.
-- **Cart Summary Component**: Shows the total number of items and total amount in the cart.
+- **Search Component**: ![image](https://github.com/kyrios12/ExpenseTracker/assets/103828615/485cc4ff-5242-4253-b70c-fdee21b62584)
+- 
+## Routes
 
-### Shared Components
-
-- **Header Component**: Displays company logo and navigation links.
-- **Filter Component**: Allows applying filter values for attributes like color, gender, price range, and type.
-- **Search Component**: Enables searching for products using free text.
-
-## Screenshots
-
-### Product Page
-
-![Product Page](screenshots/product-page.png)
-
-### Cart Page
-
-![Cart Page](screenshots/cart-page.png)
-
-### Product Page Mobile
-
-![Product Page Mobile](screenshots/product-page-mobile.png)
-
-### Cart Page Mobile
-
-![Cart Page Mobile](screenshots/cart-page-mobile.png)
 
 ## Exception Handling
 
