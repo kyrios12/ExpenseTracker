@@ -14,7 +14,7 @@ Expense tracker allows user to create new expenses, edit or delete previous expe
 ## Getting Started
 
 1. Clone the repository: [GIT Repo]https://github.com/kyrios12/ExpenseTracker
-2. Project live:https://expense-tracker-kyrios12.vercel.app/
+2. Project live Demo: https://expense-tracker-kyrios12.vercel.app/
 3. Navigate to the project directory and extract the files.
 4. Run `npm install` to install the required packages.
 5. Navigate to [http://localhost:3000/](http://localhost:3000/) in your browser.
