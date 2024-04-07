@@ -1,0 +1,11 @@
+.filterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .filterContainer input[type='date'] {
+    width: 150px;
+  }
+  

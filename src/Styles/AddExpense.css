@@ -1,0 +1,51 @@
+.expenseContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -100px;
+  height: 100vh; /* Adjusted height */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 300px; /* Set a fixed width for better alignment */
+}
+
+form label {
+  margin-left: -200px; /* Adjusted label position */
+}
+
+.expenseContainer input {
+  margin: 10px 0; /* Adjusted margin */
+  padding: 10px; /* Adjusted padding */
+  width: 100%; /* Make inputs full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.button {
+  margin: 10px 0; /* Adjusted margin */
+  padding: 10px 20px; /* Adjusted padding */
+  width: 50%; /* Make buttons full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Styling for specific button types */
+button[type=back] {
+  margin: 10px;
+}
+
+button[type=submit] {
+  width: 50%; /* Make submit button full width */
+}
+
+button[type=cancel] {
+  background-color: #D03512; /* Custom background color for cancel button */
+  color: white; /* Text color for cancel button */
+  width: 50%; /* Make cancel button full width */
+}

@@ -1,0 +1,12 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.searchContainer input[type='text'] {
+  width: 200px;
+}
+
+
